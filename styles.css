@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 17.5px; /* Increased from 10px */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 87.5px; /* Increased from 50px */
+    background: url('hero.jpg') center/cover;
+    color: rgb(10, 10, 10);
+}
+
+.hero h1 {
+    font-size: 4.375em; /* Increased from 2.5em */
+    margin-bottom: 35px; /* Increased from 20px */
+}
+
+.hero p {
+    font-size: 2.625rem; /* Increased from 1.5rem */
+}
+
+/* Responsive Image */
+.responsive-img {
+    width: 100%;
+    max-width: 612.5px; /* Increased from 350px */
+    height: 437.5px; /* Increased from 250px */
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #28a745;
+    color: white;
+    padding: 17.5px 35px; /* Increased from 10px 20px */
+    text-decoration: none;
+    border-radius: 8.75px; /* Increased from 5px */
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+/* Forms */
+.form-container {
+    max-width: 875px; /* Increased from 500px */
+    margin: auto;
+    padding: 35px; /* Increased from 20px */
+    background: white;
+    border-radius: 17.5px; /* Increased from 10px */
+    box-shadow: 0px 7px 17.5px rgba(0, 0, 0, 0.1); /* Increased from 4px 10px */
+}
+
+/* Footer */
+.footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 17.5px; /* Increased from 10px */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 52.5px; /* Increased from 30px */
+    }
+
+    .responsive-img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitTrack</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<br>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FitTrack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <h1>📞 Get in Touch with FitTrack</h1>
+        <p>Have questions? Reach out to us, and we’ll be happy to assist you!</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <h2>📍 Our Location</h2>
+                <p><strong>Address:</strong> 123 Fitness Street, Health City, USA</p>
+                <p><strong>Email:</strong> support@fittrack.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Working Hours:</strong> Mon-Fri: 9 AM - 7 PM</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h2>📩 Send Us a Message</h2>
+                <form id="contactForm" class="form-container">
+                    <div class="mb-3">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="sendBtn" class="btn btn-primary w-100 btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Page Button -->
+    <div class="text-center mt-4">
+        <a href="faq.html" class="btn btn-success">Next ➡️ FAQ</a>
+    </div>
+     <!-- Navigation Button to Home -->
+     <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-primary">🏠 Back to Home</a>
+    </div>
+<br>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center text-white py-3">
+        <p>&copy; 2025 FitTrack | All Rights Reserved</p>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

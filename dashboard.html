@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FitTrack</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    
+    <!-- Chart.js for Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<br>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FitTrack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">📊 Your Fitness Dashboard</h1>
+        <p class="text-center">Track your daily progress and stay on top of your fitness goals!</p>
+
+        <div class="row">
+            <!-- Calories Card -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">🔥 Calories</h5>
+                        <p id="calories" class="card-text">0 kcal</p>
+                        <button id="addCal" class="btn btn-primary">Add Calories</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Water Card -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">💧 Water</h5>
+                        <p id="water" class="card-text">0 ml</p>
+                        <button id="addWater" class="btn btn-primary">Add Water</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps Card -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">🚶 Steps</h5>
+                        <p id="steps" class="card-text">0</p>
+                        <button id="addSteps" class="btn btn-primary">Add Steps</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Chart -->
+        <div class="mt-5">
+            <canvas id="progressChart"></canvas>
+        </div>
+
+        <!-- Next Page Button -->
+        <div class="text-center mt-4">
+            <a href="about.html" class="btn btn-success">Next Page →</a>
+        </div>
+         <!-- Navigation Button to Home -->
+    <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-primary">🏠 Back to Home</a>
+    </div>
+    </div>
+<br>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-center text-white py-3">
+    <p>&copy; 2025 FitTrack | All Rights Reserved</p>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
